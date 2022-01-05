@@ -98,13 +98,13 @@ BEGIN {
     trimdots = 1;
 
     # change this to your name
-    author = ENVIRON["AUTHOR"] != "" ? ENVIRON["AUTHOR"] : "Marc Sherry"
+    author = ENVIRON["AUTHOR"] != "" ? ENVIRON["AUTHOR"] : "YS"
 
     # and to your email address
-    emailaddress = ENVIRON["EMAIL"] != "" ? ENVIRON["EMAIL"] : "unknown"
+    emailaddress = ENVIRON["EMAIL"] != "" ? ENVIRON["EMAIL"] : "contact@yasha.solutions"
 
     # calendar/category name for display in org-mode
-    calendarname = ENVIRON["CALENDAR"] != "" ? ENVIRON["CALENDAR"] : "unknown"
+    calendarname = ENVIRON["CALENDAR"] != "" ? ENVIRON["CALENDAR"] : "EVENTS"
 
     # any tags for this calendar (e.g. "WORK" or "PERSONAL")
     filetags = ENVIRON["FILETAGS"] != "" ? ENVIRON["FILETAGS"] : "unknown"
