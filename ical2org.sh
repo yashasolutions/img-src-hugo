@@ -1,11 +1,11 @@
 #!/bin/bash
 
-ICS2ORG="<path to ical2org>"
-ICSFILE="<path for icsfile>"
-ORGFILE="<path to orgfile>"
-URL="<url to your private Google calendar>"
+ICAL2ORGFILE="<path to orgfile>"
+GOOGLE_CAL_URL="<url to your private Google calendar>"
 
-# no customization needed below
+source ~/.ical2org.rc
 
-$WGET -O $ICSFILE $URL
-$ICS2ORG < $ICSFILE > $ORGFILE
+echo $ICAL2ORGFILE
+echo $GOOGLE_CAL_URL
+wget -O /tmp/basic.ics $GOOGLE_CAL_URL
+awk -f ~/.local/share/ical2org.awk< /tmp/basic.ics > $ICAL2ORGFILE
