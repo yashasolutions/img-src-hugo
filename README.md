@@ -1,3 +1,3 @@
 # How to integrate Google Calendar with Emacs
 
-- reference
+- https://yasha.solutions/posts/google-calendar-emacs-integration/
